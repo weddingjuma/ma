@@ -1,0 +1,50 @@
+[ITALIANO]
+
+* Aggiungere le librerie presenti in extras/tomcat-libs, relative alla
+  versione di Tomcat su cui verrà installato CMDBuild, fra quelle a
+  disposizione del servlet container (come indicato nel file INSTALL.txt
+  presente nella cartella)
+* Aggiungere la libreria presente in scheduler/tomcat-libs fra quelle a
+  disposizione del servlet container
+* Copiare openmaint-{versione}.war nella cartella "webapps" di Tomcat, rinominandolo in openmaint.war
+* Creare un nuovo database sulla propria installazione di PostgreSQL ed eseguire il restore di uno dei backup presenti nella cartella database
+* Avviare l'applicazione e nella form Configurazione scegliere 
+	- Tipo Database CMDBuild: Esistente
+	- Nome Database: il nome del database appena creato
+* Sono disponibili le seguenti due utenze di accesso
+  	utente con privilegi di amministratore:
+		- Username: admin
+		- Password: admin
+  	utente appartenente al gruppo Requester (non amministratore): 
+		- Username: requester
+		- Password: requester
+  	utente appartenente ai gruppi Workers1 e Workers2 (non amministratore): 
+		- Username: worker
+		- Password: worker	
+
+* Nel caso si utilizzi il modulo GIS, copiare all'interno della cartella della webapp openmaint la cartella extras/upload
+
+[ENGLISH]
+
+* Copy the libraries in extras/tomcat-libs, for the Tomcat version you
+  will be installing CMDBuild in, to the Tomcat "libs" directory (as
+  written in the INSTALL.txt file present in that folder)
+* Copy the libraries in scheduler/tomcat-libs to the Tomcat "libs" directory
+* Copy openmaint-{version}.war in the Tomcat "webapps" directory, renaming it to openmaint.war
+* Create a new database in your PostgreSQL installation, then restore uno of the databases in the database folder
+* Start the application and set the following parameters in the Configuration form
+	- CMDBuild Database Type: Existing
+	- CMDBuild Database name: the name of the database that you have just created
+* Log in the application using one of the provided sample users
+  	user with administrative privileges
+		- Username: admin
+		- Password: admin
+  	user belonging to Requester role (non-administrator): 
+		- Username: requester
+		- Password: requester
+  	user belonging to roles Workers1 and Workers2 (non-administrator): 
+		- Username: worker
+		- Password: worker	
+
+* If you are going to use the GIS module, copy the directory extras/upload inside the directory of the deployed openmaint webapp
+

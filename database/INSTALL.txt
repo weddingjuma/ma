@@ -1,0 +1,17 @@
+[ITALIANO]
+
+* openmaint-empty.backup: database vuoto
+
+* openmaint-empty-gis.backup: database vuoto predisposto per l'utilizzo del modulo GIS (richiede PostGIS 2.0 o 2.1)
+
+* openmaint-demo.backup: database popolato con alcuni dati di esempio (richiede PostGIS 2.0 o 2.1). Richiede di copiare la cartella upload nella cartella dell'applicazione openmaint per visualizzare le icone degli edifici sulla mappa. 
+	
+
+
+[ENGLISH]
+
+* openmaint-empty.backup: empty database
+
+* openmaint-empty-gis.backup: empty database ready for the uso of the GIS module (it requires PostGIS 2.0 or 2.1)
+
+* openmaint-demo.backup: database with some sample data (it requires PostGIS 2.0 or 2.1). In order to view the icon of the buildings on the map, copy the extras/upload folder into the folder of the deployed application openmaint.
